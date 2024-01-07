@@ -1,23 +1,28 @@
 # Python-API-Challenge
 ## Challenge Description
 This challenge has been split into two deliverables. The first 'WeatherPy' tasked to obtain the weather from the 'OpenWeatherMap API' for 500 cities across the world, with the data collected and being output to a CSV file before being read into the second task 'VacationPy'. In the second task, using the data within the CSV, locate hotels using the 'Geoapify API' within certain Cities.
+
 ## WeatherPy
-To work on this challenge WeatherPy.ipynb and VacationPy.ipynb starter code files were already been provided. I have built my code to generate random geographic coordinates and the nearest city to each latitude and longitude which is used in later to find the relationship of each city coordinates and the variable by plotting them into scatter plots.
--•	Latitude vs. Temperature
--•	Latitude vs. Humidity
--•	Latitude vs. Cloudiness
--•	Latitude vs. Wind Speed
+
+To work on this challenge, WeatherPy.ipynb and VacationPy.ipynb starter code files were already provided. I built my code to generate random geographic coordinates and find the nearest city to each latitude and longitude. This information is later used to explore the relationship of each city's coordinates and variables by plotting them into scatter plots.
+
+- Latitude vs. Temperature
+- Latitude vs. Humidity
+- Latitude vs. Cloudiness
+- Latitude vs. Wind Speed
+
 Then I have append all the data to “city_data” list and created a data frame to save all the cities  records into csv data file named “cities” and capture all four relationship figures (Fig1, Fig2, Fig3 and Fig4)  into “ output_data”. 
 Then in later stage I have computed the linear regression for each relationship. Separate the plots into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude). 
 Next, I have created a series of scatter plot with the linear regression line, the model's formula, and the r values which help to evaluate the graphs and analyse the data. 
-•	Northern Hemisphere: Temperature (C) vs. Latitude
-•	Southern Hemisphere: Temperature (C) vs. Latitude
-•	Northern Hemisphere: Humidity (%) vs. Latitude
-•	Southern Hemisphere: Humidity (%) vs. Latitude
-•	Northern Hemisphere: Cloudiness (%) vs. Latitude
-•	Southern Hemisphere: Cloudiness (%) vs. Latitude
-•	Northern Hemisphere: Wind Speed (m/s) vs. Latitude
-•	Southern Hemisphere: Wind Speed (m/s) vs. Latitude
+-	Northern Hemisphere: Temperature (C) vs. Latitude
+-	Southern Hemisphere: Temperature (C) vs. Latitude
+-	Northern Hemisphere: Humidity (%) vs. Latitude
+-	Southern Hemisphere: Humidity (%) vs. Latitude
+-	Northern Hemisphere: Cloudiness (%) vs. Latitude
+-	Southern Hemisphere: Cloudiness (%) vs. Latitude
+-	Northern Hemisphere: Wind Speed (m/s) vs. Latitude
+-	Southern Hemisphere: Wind Speed (m/s) vs. Latitude
+
 ## VacationPy
 Using the csv file I have created in previous sub challenge WeatherPy (city_data_df), plot the cities on a hvplot map. The size of the point was based on humidity in each city.
 
